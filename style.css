@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #D3D3D3;
+}
+
+.container {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.rps-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.rps-button:active {
+  background-color: #0056b3;
+  transform: scale(0.95);
+}
+
+.results {
+  font-size: 16px;
+  color: #333;
+}
+
+#round-result {
+  margin-top: 10px;
+}
+
+#winner-announcement {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.user-win {
+  color: #28a745; 
+}
+
+.computer-win {
+  color: #dc3545; 
+}
+
+#tie-announcement {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000; 
+}
+
+@media (max-width: 480px) {
+  .rps-button {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+
+  .container {
+      padding: 15px;
+  }
+}

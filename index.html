@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Paper Scissors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Rock Paper Scissors</h1>
-  <h3>Please Open Console To Check Results</h3>
-  <script src="script.js"></script>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="buttons">
+            <button class="rps-button" id="rock">Rock</button>
+            <button class="rps-button" id="paper">Paper</button>
+            <button class="rps-button" id="scissors">Scissors</button>
+        </div>
+        <div class="results">
+            <p id="round-result">Make your move!</p>
+            <p id="winner-announcement"></p> 
+            <p id="tie-announcement"></p> 
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
